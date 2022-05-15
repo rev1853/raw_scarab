@@ -1,7 +1,7 @@
 import 'package:<<projectName>>/core/model.dart';
 
-class Example extends Model {
-  Example({
+class <<fileName>> extends Model {
+  <<fileName>>({
     String? createddate,
     String? updateddate,
     int? createdby,
@@ -15,7 +15,7 @@ class Example extends Model {
           isactive: isactive,
         );
 
-  Example.fromJson(Map<String, dynamic> json) {
+  <<fileName>>.fromJson(Map<String, dynamic> json) {
     super.fromJson(json);
   }
 
