@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:<<projectName>>/core/regular_view.dart';
-import 'package:<<projectName>>/app/states/controllers/example_state_controller.dart';
+import 'package:<<projectName>>/app/states/controllers/<<stateControllerFileName>>';
 
-class ExampleView extends View<ExampleStateController> {
-  static const String route = "/example";
+class <<className>> extends View<<<stateControllerName>>> {
+  static const String route = "/<<routeName>>";
 
   @override
   Widget build(BuildContext context) {
