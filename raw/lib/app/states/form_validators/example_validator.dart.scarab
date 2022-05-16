@@ -1,4 +1,4 @@
-import 'package:<<projectName>>/app/states/form_sources/<<formSourceFileName>>.dart';
+import 'package:<<projectName>>/app/states/form_sources/<<formSourceFileName>>';
 
 class <<className>> {
   <<formSourceName>> _formSource;
