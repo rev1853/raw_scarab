@@ -2,27 +2,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:<<projectName>>/app/resources/views/example.dart';
-import 'package:<<projectName>>/app/states/controllers/example_state_controller.dart';
 import 'package:<<projectName>>/core/page_route.dart';
 import 'package:<<projectName>>/core/view_navigator.dart';
 
-class ExampleNavigator extends ViewNavigator {
-  static const id = 3;
-  ExampleNavigator({required GlobalKey<NavigatorState> navigatorKey}) : super(navigatorKey: navigatorKey);
+class <<className>> extends ViewNavigator {
+  static final id = Views.<<viewsEnum>>.index;
+  <<className>>({required GlobalKey<NavigatorState> navigatorKey}) : super(navigatorKey: navigatorKey);
 
   @override
-  String get initialRoute => ExampleView.route;
+  String get initialRoute => '/';
 
   @override
   Map<String, ViewRoute Function(Object? args)> get routes => {
-        ExampleView.route: (args) => ViewRoute(
-              page: () => ExampleView(),
-              bindings: [
-                BindingsBuilder(() {
-                  Get.put(ExampleStateController());
-                })
-              ],
-            ),
+      // please don't remove this line
       };
 }
