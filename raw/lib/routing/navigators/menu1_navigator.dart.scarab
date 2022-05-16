@@ -24,5 +24,6 @@ class Menu1Navigator extends ViewNavigator {
                 })
               ],
             ),
+      // please don't remove this line
       };
 }
