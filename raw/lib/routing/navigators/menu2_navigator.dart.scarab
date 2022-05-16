@@ -8,7 +8,7 @@ import 'package:<<projectName>>/core/page_route.dart';
 import 'package:<<projectName>>/core/view_navigator.dart';
 
 class Menu2Navigator extends ViewNavigator {
-  static const id = 2;
+  static final id = Views.menu2.index;
   Menu2Navigator({required GlobalKey<NavigatorState> navigatorKey}) : super(navigatorKey: navigatorKey);
 
   @override
@@ -24,5 +24,6 @@ class Menu2Navigator extends ViewNavigator {
                 })
               ],
             ),
+      // please don't remove this line
       };
 }

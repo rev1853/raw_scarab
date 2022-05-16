@@ -6,9 +6,10 @@ import 'package:<<projectName>>/app/resources/views/menu1.dart';
 import 'package:<<projectName>>/app/states/controllers/menu1_state_controller.dart';
 import 'package:<<projectName>>/core/page_route.dart';
 import 'package:<<projectName>>/core/view_navigator.dart';
+import 'package:<<projectName>>/constants/views.dart';
 
 class Menu1Navigator extends ViewNavigator {
-  static const id = 1;
+  static final id = Views.menu1.index;
   Menu1Navigator({required GlobalKey<NavigatorState> navigatorKey}) : super(navigatorKey: navigatorKey);
 
   @override
