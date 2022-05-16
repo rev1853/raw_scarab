@@ -1,16 +1,11 @@
 import 'package:get/get.dart';
-import 'package:<<projectName>>/app/states/controllers/example_state_controller.dart';
-import 'package:<<projectName>>/app/states/form_validators/example_validator.dart';
-import 'package:<<projectName>>/app/states/listeners/example_listener.dart';
+import 'package:<<projectName>>/app/states/form_validators/<<validatorFileName>>';
 
-class ExampleFormSource {
-  late ExampleValidator validator;
-
-  final ExampleListener _listener = Get.find<ExampleListener>();
-  final ExampleProperties _properties = Get.find<ExampleProperties>();
+class <<className>> {
+  late <<validatorName>> validator;
 
   void init() {
-    validator = ExampleValidator(this);
+    validator = <<validatorName>>(this);
   }
 
   Map<String, dynamic> toJson() => {};
