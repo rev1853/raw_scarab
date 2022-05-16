@@ -1,6 +1,6 @@
 import 'package:<<projectName>>/core/service.dart';
 
-class ExampleService extends Service {
+class <<className>> extends Service {
   @override
-  String get api => "/example";
+  String get api => "/<<urlPath>>";
 }
