@@ -1,1 +1,4 @@
-class <<className>> {}
+<<presenterImport>>
+class <<className>> {
+    <<presenterDeclaration>>
+}
