@@ -2,13 +2,22 @@
 
 import 'package:get/get.dart';
 import 'package:<<projectName>>/app/states/controllers/regular_state_controller.dart';
+<<listenerImport>>
+<<formSourceImport>>
+<<dataSourceImport>>
 
 class <<className>> extends RegularStateController {
   <<propertiesName>> properties = Get.put(<<propertiesName>>());
+  <<listenerDeclaration>>
+  <<formSourceDeclaration>>
+  <<dataSourceDeclaration>>
 
   @override
   void onClose() {
     Get.delete<<<propertiesName>>>();
+    <<listenerDelete>>
+    <<formSourceDelete>>
+    <<dataSourceDelete>>
     super.onClose();
   }
 }
