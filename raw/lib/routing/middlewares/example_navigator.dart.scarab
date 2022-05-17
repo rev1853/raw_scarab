@@ -3,18 +3,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class AuthMiddleware extends GetMiddleware {
+class <<className>> extends GetMiddleware {
   @override
   RouteSettings? redirect(String? route) {
-    bool isLogin = this.isLogin();
-    if (isLogin) {
+    if (route == 'login) {
       return RouteSettings(name: '/login');
     } else {
       return null;
     }
-  }
-
-  bool isLogin() {
-    return false;
   }
 }
