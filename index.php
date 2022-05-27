@@ -4,5 +4,5 @@ if (isset($_POST['path'])) {
     $content = file_get_contents("raw/" . $path);
     echo json_encode(['content' => base64_encode($content)]);
 } else {
-    echo "No path specified";
+    echo "error: No path specified";
 }
