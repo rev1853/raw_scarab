@@ -6,6 +6,7 @@ import 'package:<<projectName>>/app/resources/views/menu2.dart';
 import 'package:<<projectName>>/app/states/controllers/menu2_state_controller.dart';
 import 'package:<<projectName>>/core/page_route.dart';
 import 'package:<<projectName>>/core/view_navigator.dart';
+import 'package:<<projectName>>/constants/views.dart';
 
 class Menu2Navigator extends ViewNavigator {
   static final id = Views.menu2.index;
